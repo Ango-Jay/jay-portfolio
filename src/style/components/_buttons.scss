@@ -6,6 +6,7 @@
   font-weight: bold;
   line-height: 1;
   z-index: 1;
+  border-radius: 20px;
   transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.6s;
 
   &::after {
@@ -14,6 +15,7 @@
     position: absolute;
     width: 0px;
     height: 100%;
+    border-radius: 20px;
     left: 0;
     bottom: 0;
     z-index: -1;
@@ -25,6 +27,7 @@
 .cta-btn--hero {
   @include supportColorForIE11();
   border: 2px solid transparent;
+  border-radius: 20px;
   border-image: linear-gradient(
     135deg,
     $primary-color 0%,
@@ -66,6 +69,7 @@
 
     &::after {
       width: 100%;
+      border-radius: 20px;
     }
   }
 }
