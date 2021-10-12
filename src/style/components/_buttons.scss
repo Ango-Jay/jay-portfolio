@@ -36,6 +36,7 @@
   border-image-slice: 1;
   @include supportIE11() {
     color: $secondary-color !important;
+    border-radius: 20px;
     &:hover {
       color: $white-color !important;
     }
@@ -44,6 +45,7 @@
   @include respond(phone) {
     background-image: none;
     border: 2px solid $secondary-color;
+    border-radius: 20px;
     -webkit-text-fill-color: $secondary-color;
   }
 
@@ -78,9 +80,11 @@
 .cta-btn--resume {
   color: $white-color;
   border: 2px solid $white-color;
+  border-radius: 20px;
 
   &::after {
     background: $white-color;
+    border-radius: 20px;
   }
 
   &:hover {
@@ -89,6 +93,7 @@
 
     &::after {
       width: 100%;
+      border-radius: 20px;
     }
   }
 }
