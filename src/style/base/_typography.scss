@@ -28,9 +28,21 @@ a:hover {
   font-size: $big-font-size;
   font-weight: bold;
   text-transform: uppercase;
+  
 
   @include respond(phone) {
     font-size: 2.8rem;
+  }
+  &::after{
+    content:'';
+    position: absolute;
+  top: calc(100% + 1.5rem);
+  height: 5px;
+  width: 3rem;
+  background-color: #fff;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
   }
 }
 
