@@ -27,7 +27,7 @@
     border-radius: 50px;
     overflow: hidden;
     margin-right: 1.5rem;
-    background: $primary-color;
+    background: #fff;
 
     @include respond(tab-port) {
       width: 4.5rem;
@@ -51,6 +51,7 @@
   }
   &__links {
     display: flex;
+    list-style-type:none;
     @include respond(phone) {
       display: none;
     }
@@ -66,6 +67,12 @@
     @include respond(tab-port) {
       padding: 3rem 1.8rem;
       font-size: 1.5rem;
+      &:active{
+        color: $secondary-color;
+      }
+    }
+    &:active{
+      color: $secondary-color;
     }
   }
 
@@ -81,6 +88,21 @@
   }
   &__main-ham-menu {
     width: 100%;
+   /*     @include respond(phone) {
+      display: block;
+    }
+    &--active{
+      display: none;
+    }
+     &-close{
+      display: none;
+      &--active{
+        @include respond(phone) {
+          display: block;
+        }
+      }
+      } */
+    
   }
 
   &__sm-menu {
@@ -102,9 +124,11 @@
     }
   }
   &__sm-menu-link {
+    list-style-type:none;
     a {
       display: block;
       text-decoration: none;
+      color: $secondary-color;
       padding: 2.5rem 3rem;
       font-size: 1.6rem;
       color: #333;
@@ -123,4 +147,5 @@
   &__sm-menu-link-last {
     border-bottom: 0;
   }
+  
 }
