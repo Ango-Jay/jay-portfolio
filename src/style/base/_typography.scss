@@ -43,6 +43,9 @@ a:hover {
   left: 50%;
   transform: translateX(-50%);
   border-radius: 5px;
+  @include respond(phone){
+    top: calc(100% + 14rem);
+  }
   }
 }
 

@@ -13,7 +13,9 @@
   -webkit-clip-path: ellipse(1500px 645px at 100% 10%);
   clip-path: ellipse(1500px 645px at 100% 10%);
   padding-bottom: 10%;
-
+@include respond(phone){
+  margin-top: 12rem;
+}
   @include respond(tab-land) {
     height: 100%;
     -webkit-clip-path: none;
