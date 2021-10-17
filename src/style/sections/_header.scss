@@ -88,7 +88,7 @@
   }
   &__main-ham-menu {
     width: 100%;
-   /*     @include respond(phone) {
+       @include respond(phone) {
       display: block;
     }
     &--active{
@@ -96,12 +96,16 @@
     }
      &-close{
       display: none;
-      &--active{
-        @include respond(phone) {
-          display: block;
-        }
-      }
-      } */
+      width: 25px;
+      transition: width 0.5s ease-in-out;
+     // transform: rotate(20deg);
+    &:active{
+      width: 25px;
+   //   transform: rotate(70deg);
+
+    }  
+    }
+
     
   }
 

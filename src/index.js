@@ -10,7 +10,12 @@ const hamClose = document.querySelector('.header__main-ham-menu-close')
 
 
 hamMenuBtn.addEventListener('click', () => {
+  
+
   if (smallMenu.classList.contains('header__sm-menu--active')) {
+    hamClose.style.display = "none"
+    hamImg.style.display = "block"
+   
     smallMenu.classList.remove('header__sm-menu--active');
    /*  hamClose.classList.remove('header__main-ham-menu-close--active');
     hamImg.classList.add('header__main-ham-menu--active'); */
@@ -18,6 +23,9 @@ hamMenuBtn.addEventListener('click', () => {
 
   } else {
     smallMenu.classList.add('header__sm-menu--active')
+    hamImg.style.display = "none"
+    hamClose.style.display = "block"
+    
 /*     hamClose.classList.add('header__main-ham-menu-close--active');
     hamImg.classList.remove('header__main-ham-menu--active'); */
 
