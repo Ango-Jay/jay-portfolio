@@ -18,8 +18,13 @@
 }
   @include respond(tab-land) {
     height: 100%;
-    -webkit-clip-path: none;
+    -webkit-clip-path:ellipse(1500px 645px at 100% 10%);
     clip-path: none;
+  }
+  @include respond(big-desktop) {
+    height: 100%;
+    -webkit-clip-path: ellipse(2000px 645px at 100% 10%);
+    clip-path: ellipse(2000px 645px at 100% 10%);
   }
 
   .about-wrapper {
