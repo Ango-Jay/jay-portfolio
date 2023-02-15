@@ -75,6 +75,12 @@
     }
 
   }
+  .hero-row{
+    @include respond(tab-port) {
+ flex-direction: column !important;
+    }
+  }
+  
   .hero-img{
    width: 100%; 
   //  margin-bottom:1.5rem;
