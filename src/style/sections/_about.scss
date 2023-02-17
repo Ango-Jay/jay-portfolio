@@ -31,6 +31,9 @@
     @include respond(phone) {
       padding-bottom: 5rem;
     }
+    @include respond(tab-port) {
+   flex-direction: column !important;
+    }
 
     &__image {
       display: flex;
