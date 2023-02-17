@@ -44,12 +44,10 @@
       @include respond(tab-land) {
         height: 100%;
       }
-      @include respond(tab-port-sm) {
+      @include respond(tab-port) {
         padding-bottom: 6.4rem;
       }
-      @include respond(tab-port) {
- margin-bottom: 1rem;
-      }
+
     }
 
     &__info {
