@@ -30,6 +30,9 @@
   }
  @include respond(tab-port) {
   padding: 0rem 5.6rem;
+  background-image:url("/src/assets//bg-circle-scatter.svg");
+  background-position: center;
+  background-size: cover;
     }
   
   .hero-title {
