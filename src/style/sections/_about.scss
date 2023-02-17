@@ -47,6 +47,9 @@
       @include respond(tab-port-sm) {
         padding-bottom: 6.4rem;
       }
+      @include respond(tab-port) {
+ margin-bottom: 1rem;
+      }
     }
 
     &__info {
