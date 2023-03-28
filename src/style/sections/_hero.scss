@@ -79,6 +79,7 @@
 
   }
   .hero-row{
+    align-items:center;
     @include respond(tab-port) {
  flex-direction: column !important;
     }
